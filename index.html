@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到我的小窝</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://pt.98bbs.com" type="image/x-icon">
+</head>
+
+<body bgcolor="#fff" onload="newtext()">
+    <strong>
+        <marquee behavior="" direction="">欢迎来到我的小窝</marquee>
+    </strong>
+    <section>
+        <div>
+            <img src="http://q.qlogo.cn/headimg_dl?dst_uin=你的QQ&spec=640&img_type=jpg" alt="">
+            <h1>智创科技信息网</h1>
+            <h3>今年16岁</h3>
+            <p>又是穷困潦倒的一年</p>
+            <br>
+            <a href="#!">点下康康</a>
+        </div>
+        <div>
+            <h2>旗下站点</h2>
+            <a href="#!" target="_blank" rel="noopener noreferrer">智创科技信息网</a>
+            <a href="#!" target="_blank" rel="noopener noreferrer">智创科技信息网</a>
+            <a href="#!" target="_blank" rel="noopener noreferrer">智创科技信息网</a>
+            <a href="#!" target="_blank" rel="noopener noreferrer">智创科技信息网</a>
+            <a href="#!" target="_blank" rel="noopener noreferrer">智创科技信息网</a>
+        </div>
+    </section>
+    <footer>
+        <p><a href="https://pt.98bbs.com" target="_blank" rel="noopener noreferrer">Copyright ©2021-2024 智创科技信息网 版权所有</a></p>
+        <p><a href="https://pt.98bbs.com" target="_blank" rel="noopener noreferrer">备案号:DNN38298891FS</a></p>
+    </footer>
+    <script>
+        var text = document.title
+        var timerID
+        function newtext() {
+            clearTimeout(timerID)
+            document.title = text.substring(1, text.length) + text.substring(0, 1)
+            text = document.title.substring(0, text.length)
+            timerID = setTimeout("newtext()", 300)
+        };
+    </script>
+</body>
+
+</html>
